@@ -133,7 +133,7 @@ hr {
   -webkit-box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.35);
   box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.35);
   width: 90%;
-  margin: 0 auto;
+  margin: 50px auto;
   max-width: 500px;}
 
 @-webkit-keyframes fade-in {
