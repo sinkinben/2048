@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Get Everything!</title>
@@ -11,8 +12,10 @@
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="viewport"
+    content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
+
 <body>
   <div class="container">
     <div class="heading">
@@ -37,7 +40,7 @@
       <div class="game-message">
         <p></p>
         <div class="lower">
-	        <a class="keep-playing-button">Keep going</a>
+          <a class="keep-playing-button">Keep going</a>
           <a class="retry-button">Try again</a>
         </div>
       </div>
@@ -75,16 +78,23 @@
     </div>
 
     <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same college touch, they <strong>merge into one!</strong>
-      <br><strong class="important">Note:</strong> The order of colleges is not intended to be a ranking (boo), but a rough west-to-east geographical path to MIT.
+      This is a mutation of little game 2048.
+      When two tiles with the same tile meet,
+      they <strong>merge into one!</strong>
+      You can get something finally according to the theme you selected.
     </p>
+    <strong class="important">How to play</strong>
+    <ul>
+      <li>On computer, use the <strong>arrow keys</strong> ⬆️, ⬇️, ⬅️, ➡️ to move the tiles.</li>
+      <li>On mobile, just swipe your screen.</li>
+    </ul>
+
     <hr>
     <p>
-    Created by <a href="http://web.mit.edu/mitchgu/www">Mitchell Gu</a>. Inspired by <a href="http://naveenarun.github.io/GetCaltech/">Get Caltech by Naveen Arun</a>. Based on <a href="http://gabrielecirulli.com" target="_blank">2048 by Gabriele Cirulli.</a> and <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
-    </p>
-    <hr>
-    <p>
-    Background Image: Kresge Auditorium in December <br> Photocred: <a href="https://twitter.com/DrDawnMIT/status/416643272153763841">@DrDawnMIT</a>
+      Create by <a href="http://sinkinben.cnblogs.com" target="_blank">sinkinben</a>. 
+      Inspired by <a href="https://github.com/mitchgu/GetMIT" target="_blank">GetMIT by mitchgu</a> and 
+      <a href="https://github.com/guest0417/GetSJTU" target="_blank">GetSJTU by guest0417</a>.
+      I wrote this project based on the source code <a href="https://github.com/mitchgu/GetMIT" target="_blank">GetMIT by mitchgu</a>.
     </p>
   </div>
 
@@ -97,4 +107,5 @@
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
 </body>
+
 </html>
