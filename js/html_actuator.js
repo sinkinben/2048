@@ -1,10 +1,35 @@
-function HTMLActuator() {
+function HTMLActuator(Theme) {
   this.tileContainer    = document.querySelector(".tile-container");
   this.scoreContainer   = document.querySelector(".score-container");
   this.bestContainer    = document.querySelector(".best-container");
   this.messageContainer = document.querySelector(".game-message");
 
   this.score = 0;
+  this.theme = Theme;
+  this.setTheme();
+}
+
+HTMLActuator.prototype.setTileImage = function () {
+
+}
+
+HTMLActuator.prototype.setTheme = function () {
+
+  const theme = this.theme;
+  const path = theme.path;
+
+  // fill game introduction
+  var intro = document.getElementsByClassName('game-intro')[0];
+  intro.innerHTML = this.theme.intro;
+
+  // reset the background
+  document.body.style.background = '';
+
+  // click the intro text, show a background (as an Easter Egg)
+  document.getElementById("intro-span").onclick = function () {
+    document.body.style.background = 'url(' + path + theme['background'] + ')';
+  };
+
 }
 
 HTMLActuator.prototype.actuate = function (grid, metadata) {
@@ -88,6 +113,11 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   // Put the tile on the board
   this.tileContainer.appendChild(wrapper);
+
+  // Set tile image according to the theme setting
+  const path = this.theme.path;
+  const mapping = this.theme.mapping;
+  wrapper.firstChild.style.backgroundImage = 'url(' + path + mapping[tile.value] + ')';
 };
 
 HTMLActuator.prototype.applyClasses = function (element, classes) {

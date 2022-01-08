@@ -1,8 +1,8 @@
-function GameManager(size, InputManager, Actuator, ScoreManager) {
+function GameManager(size, InputManager, Actuator, ScoreManager, Theme) {
   this.size         = size; // Size of the grid
   this.inputManager = new InputManager;
   this.scoreManager = new ScoreManager;
-  this.actuator     = new Actuator;
+  this.actuator     = new Actuator(Theme);
 
   this.startTiles   = 2;
 
