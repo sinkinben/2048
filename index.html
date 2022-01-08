@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>GetMIT!</title>
+  <title>Get Everything!</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
@@ -16,13 +16,22 @@
 <body>
   <div class="container">
     <div class="heading">
-      <h1 class="title">GetMIT</h1>
+      <h1 class="title">GetEverything</h1>
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
       </div>
     </div>
-    <p class="game-intro">Combine other colleges to reach the <span onclick="document.body.style.background='url(img/get-mit/petey.png)';">almighty <strong>MIT!</strong></span></p>
+    <div>
+      <label style="font-weight: bold;">Theme </label>
+      <select id="themeSelector" onchange="selectEvent()">
+        <option value="mit">Get MIT!</option>
+        <option value="sjtu">Get SJTU!</option>
+      </select>
+    </div>
+    <span id="intro-span">
+      <p class="game-intro"></p>
+    </span>
 
     <div class="game-container">
       <div class="game-message">
@@ -87,5 +96,6 @@
   <script src="js/local_score_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
+  <script src="js/theme_manager.js"></script>
 </body>
 </html>

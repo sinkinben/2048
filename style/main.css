@@ -2,7 +2,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: url(https://scontent-a.xx.fbcdn.net/hphotos-prn2/t31.0-8/1502678_10100298599491097_828497142_o.jpg);
+  /* background: url(https://scontent-a.xx.fbcdn.net/hphotos-prn2/t31.0-8/1502678_10100298599491097_828497142_o.jpg); */
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -19,7 +19,7 @@ html, body {
   clear: both; }
 
 h1.title {
-  font-size: 64px;
+  font-size: 50px;
   font-weight: bold;
   color: #A31F34;
   margin: 0;
