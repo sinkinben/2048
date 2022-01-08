@@ -4,7 +4,7 @@ function GameManager(size, InputManager, Actuator, ScoreManager, Theme) {
   this.scoreManager = new ScoreManager;
   this.actuator     = new Actuator(Theme);
 
-  this.startTiles   = 2;
+  this.startTiles   = size / 2;
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
