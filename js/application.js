@@ -66,5 +66,8 @@ function startGame(theme) {
   // Wait till the browser is ready to render the game (avoids glitches)
   globalId = window.requestAnimationFrame(function () { gm });
 
+  // restart the game 
+  document.getElementsByClassName('retry-button')[0].click();
+
 }
 
