@@ -9,10 +9,6 @@ function HTMLActuator(Theme) {
   this.setTheme();
 }
 
-HTMLActuator.prototype.setTileImage = function () {
-
-}
-
 HTMLActuator.prototype.setTheme = function () {
 
   const theme = this.theme;

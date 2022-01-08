@@ -41,8 +41,11 @@ const Themes = {
   }
 }
 
+var globalId = -1;
+var gm = null;
 
 window.onload = function () {
+  gm = new GameManager(4, KeyboardInputManager, HTMLActuator, LocalScoreManager, Themes.mit);
   startGame(Themes.mit);
 }
 
@@ -52,9 +55,16 @@ function selectEvent() {
 }
 
 function startGame(theme) {
+  // cancel the callback function set before
+  if (globalId != -1)
+    window.cancelAnimationFrame(globalId);
+  
+  // set the them in Game Manager
+  gm.actuator.theme = theme;
+  gm.actuator.setTheme();
+
   // Wait till the browser is ready to render the game (avoids glitches)
-  window.requestAnimationFrame(function () {
-    new GameManager(4, KeyboardInputManager, HTMLActuator, LocalScoreManager, theme);
-  });
+  globalId = window.requestAnimationFrame(function () { gm });
+
 }
 
