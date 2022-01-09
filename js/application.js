@@ -58,6 +58,26 @@ const Themes = {
       "2048": "mofa.jpg",
       "super": "mofa.jpg"
     }
+  },
+  "offer": {
+    name: "Get Offer!",
+    path: "img/get-offer/",
+    background: "",
+    intro: "What is the end of the universe?",
+    mapping: {
+      "2": "shit.png",
+      "4": "pdd.png",
+      "8": "baidu.png",
+      "16": "bytedance.png",
+      "32": "alibaba.png",
+      "64": "tencent.png",
+      "128": "facebook.png",
+      "256": "microsoft.png",
+      "512": "apple.png",
+      "1024": "google.png",
+      "2048": "service-people.jpeg",
+      "super": "tieling.png",
+    }
   }
 }
 
