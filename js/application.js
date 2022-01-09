@@ -1,4 +1,24 @@
 const Themes = {
+  "asoul": {
+    "name": "Get A-Soul!",
+    "path": "img/get-asoul/",
+    "background": "chenrui2.png",
+    "intro": "Get the lovely A-Souls when the lemons are ripe.",
+    "mapping": {
+      "2": "ava.webp",
+      "4": "carol.webp",
+      "8": "diana.webp",
+      "16": "kira.webp",
+      "32": "queen.webp",
+      "64": "ava2.jpeg",
+      "128": "carol2.png",
+      "256": "diana2.png",
+      "512": "kira2.png",
+      "1024": "queen2.jpeg",
+      "2048": "chenrui.webp",
+      "super": "chenrui2.png"
+    }
+  },
   "mit": {
     "name": "Get MIT!",
     "path": "img/get-mit/",
@@ -38,40 +58,34 @@ const Themes = {
       "2048": "mofa.jpg",
       "super": "mofa.jpg"
     }
-  },
-  "asoul": {
-    "name": "Get A-Soul!",
-    "path": "img/get-asoul/",
-    "background": "chenrui2.png",
-    "intro": "Get the lovely A-Souls when the lemons are ripe.",
-    "mapping": {
-      "2": "ava.webp",
-      "4": "carol.webp",
-      "8": "diana.webp",
-      "16": "kira.webp",
-      "32": "queen.webp",
-      "64": "ava2.jpeg",
-      "128": "carol2.png",
-      "256": "diana2.png",
-      "512": "kira2.png",
-      "1024": "queen2.jpeg",
-      "2048": "chenrui.webp",
-      "super": "chenrui2.png"
-    }
   }
 }
 
 var globalId = -1;
 var gm = null;
+const ThemeSelector = "theme-selector";
 
 window.onload = function () {
+  // init them options list
+  initThemeOptions();
+
+  // set A Soul as the default theme (1st theme in Themes is default)
   var theme = Themes.asoul;
   gm = new GameManager(4, KeyboardInputManager, HTMLActuator, LocalScoreManager, theme);
   startGame(theme);
 }
 
+function initThemeOptions() {
+  var selector = document.getElementById(ThemeSelector);
+  for (var key in Themes) {
+    let val = Themes[key];
+    let option = new Option(val.name, key);
+    selector.appendChild(option);
+  }
+}
+
 function selectEvent() {
-  var selected = document.getElementById("theme-selector").value;
+  var selected = document.getElementById(ThemeSelector).value;
   startGame(Themes[selected]);
 }
 
