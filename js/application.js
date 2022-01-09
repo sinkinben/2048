@@ -32,11 +32,11 @@ const Themes = {
       "32": "ustc.jpg",
       "64": "zju.jpg",
       "128": "ruc.jpg",
-      "256": "thu.png",
-      "512": "pku.png",
-      "1024": "sjtu.png",
+      "256": "thu.jpg",
+      "512": "pku.jpg",
+      "1024": "sjtu.jpg",
       "2048": "mofa.jpg",
-      "super": ""
+      "super": "mofa.jpg"
     }
   },
   "asoul": {
