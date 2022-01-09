@@ -1,5 +1,5 @@
 ## About GetEverything
-GetEverything is inspired by these project:
+GetEverything is inspired by these projects:
 - [Get 2048]()
 - [Get MIT]()
 - [Get SJTU]()
