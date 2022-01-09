@@ -78,6 +78,26 @@ const Themes = {
       "2048": "service-people.jpeg",
       "super": "tieling.png",
     }
+  },
+  "pokemon": {
+    name: "Get Pokemon!",
+    path: "img/get-pokemon/",
+    background: "why.jpeg",
+    intro: "Pokemon, go!",
+    mapping: {
+      "2": "Pichu.webp",
+      "4": "Pikachu.webp",
+      "8": "Raichu.webp",
+      "16": "Charmander.webp",
+      "32": "Charmeleon.webp",
+      "64": "Charizard-MegaX.webp",
+      "128": "Gastly.webp",
+      "256": "Haunter.webp",
+      "512": "Gengar-Mega.webp",
+      "1024": "Mewtwo-MegaY.webp",
+      "2048": "Magikarp.webp",
+      "super": "Magikarp.webp"
+    }
   }
 }
 

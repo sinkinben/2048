@@ -20,10 +20,12 @@ HTMLActuator.prototype.setTheme = function () {
 
   // reset the background
   document.body.style.background = '';
+  document.body.style.opacity = 1;
 
   // click the intro text, show a background (as an Easter Egg)
   document.getElementById("intro-span").onclick = function () {
     document.body.style.background = 'url(' + path + theme['background'] + ')';
+    document.body.style.opacity = 0.9;
   };
 
 }
