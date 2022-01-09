@@ -42,7 +42,7 @@ const Themes = {
   "asoul": {
     "name": "Get A-Soul!",
     "path": "img/get-asoul/",
-    "background": "",
+    "background": "chenrui2.png",
     "intro": "Get the lovely A-Souls when the lemons are ripe.",
     "mapping": {
       "2": "ava.webp",

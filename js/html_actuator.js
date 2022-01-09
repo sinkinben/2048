@@ -113,7 +113,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   // Set tile image according to the theme setting
   const path = this.theme.path;
   const mapping = this.theme.mapping;
-  wrapper.firstChild.style.backgroundImage = 'url(' + path + mapping[tile.value] + ')';
+  wrapper.firstChild.style.backgroundImage = 'url(' + path + (tile.value > 2048 ? mapping.super : mapping[tile.value]) + ')';
 };
 
 HTMLActuator.prototype.applyClasses = function (element, classes) {
