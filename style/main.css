@@ -510,10 +510,10 @@ hr {
     font-size: 15px; }
 
   body {
-    padding: 0 20px; }
+    padding: 0 0; }
 
   h1.title {
-    font-size: 36px;
+    font-size: 23px;
     margin-top: 5px; }
 
   .container {
