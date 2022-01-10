@@ -65,7 +65,7 @@ const Themes = {
     background: "",
     intro: "What is the end of the universe?",
     mapping: {
-      "2": "shit.png",
+      "2": "leetcode.png",
       "4": "pdd.png",
       "8": "baidu.png",
       "16": "bytedance.png",
