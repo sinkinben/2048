@@ -138,6 +138,25 @@ const Themes = {
       "2048": "him.jpeg",
       "super": "him.jpeg"
     }
+  },
+  "un-bengbu-able": {
+    name: "to be bengbu-able :-D ",
+    path: "img/bengbu/",
+    background: "",
+    intro: "🐟++, 🐴--",
+    confirm: function() {
+      if (!confirm("是否年满 18 岁？") || !confirm("是否知道复旦三剑客？")) return;
+      var input = window.prompt("请输入复旦三剑客 (之一) 的中文名");
+      if (!(input.includes("陈平") || input.includes("张维为") || input.includes("沈逸"))) return;
+      alert("如果你蚌埠住了，一律不负责 :-D .")
+    },
+    mapping: {
+      "2": "horse.png",
+      "4": "fish.png",
+      "8": "zvv.png",
+      "16": "chenrui2.png",
+      "32": "cp.jpeg",
+    }
   }
 }
 
@@ -166,6 +185,12 @@ function initThemeOptions() {
 
 function selectEvent() {
   var selected = document.getElementById(ThemeSelector).value;
+  
+  // confirm dialog
+  if (selected == "un-bengbu-able") {
+    Themes[selected].confirm();
+  }
+
   startGame(Themes[selected]);
 }
 
