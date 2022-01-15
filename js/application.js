@@ -98,6 +98,26 @@ const Themes = {
       "2048": "Magikarp.webp",
       "super": "Magikarp.webp"
     }
+  },
+  "life": {
+    name: "Get a Life!",
+    path: "img/get-a-life/",
+    background: "eason-get-a-life.webp",
+    intro: "Get A Life is the best live-concert I have ever seen.",
+    mapping: {
+      "2": "the-sound-of-music.webp",
+      "4": "concert-yy.webp",
+      "8": "taylor-red.jpeg",
+      "16": "taylor-1989.webp",
+      "32": "joey-my-secret.jpeg",
+      "64": "joey-1314.jpeg",
+      "128": "faye-a-fei-zheng-zhuan.jpeg",
+      "256": "faye-fei-bi-xun-chang.webp",
+      "512": "eason-h3m.webp",
+      "1024": "eason-the-key.webp",
+      "2048": "eason-get-a-life.webp",
+      "super": "song-of-graduation.png",
+    }
   }
 }
 
