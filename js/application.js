@@ -118,6 +118,26 @@ const Themes = {
       "2048": "eason-get-a-life.webp",
       "super": "song-of-graduation.png",
     }
+  },
+  "survive": {
+    name: "Survive in SJTU!",
+    path: "img/get-survived/",
+    background: "feint-studying.jpeg",
+    intro: "Young man, do you desire strength?",
+    mapping: {
+      "2": "53.jpeg",
+      "4": "cpp.jpeg",
+      "8": "ds.jpeg",
+      "16": "intro-algo.jpeg",
+      "32": "csapp.jpeg",
+      "64": "ostep.jpeg",
+      "128": "tiger-book.jpeg",
+      "256": "linear-algebra.jpeg",
+      "512": "math-analysis.jpeg",
+      "1024": "theoretical-mechanism.jpeg",
+      "2048": "him.jpeg",
+      "super": "him.jpeg"
+    }
   }
 }
 
